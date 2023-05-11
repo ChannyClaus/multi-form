@@ -6,6 +6,7 @@
   "main": "src/index.js",
   "dependencies": {
     "little-state-machine": "latest",
+    "node-fetch": "^3.3.1",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-hook-form": "7.0.0-alpha.0",
