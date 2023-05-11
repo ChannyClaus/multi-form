@@ -17,7 +17,7 @@ const Step1 = (props) => {
       <h2>Step 1</h2>
       <label>
         Query (exact text TBD):
-        <input {...register("query")} defaultValue={state.data.firstName} />
+        <input {...register("query")} defaultValue={state.data.query} />
       </label>
       <input type="submit" />
     </form>

@@ -4,12 +4,12 @@ import { withRouter } from "react-router-dom";
 import { useStateMachine } from "little-state-machine";
 import updateAction from "./updateAction";
 
-const Step1 = (props) => {
+const Step2 = (props) => {
   const { register, handleSubmit } = useForm();
   const { state, actions } = useStateMachine({ updateAction });
   const onSubit = (data) => {
     actions.updateAction(data);
-    props.history.push("./result");
+    props.history.push("./step3");
   };
 
   return (
@@ -27,4 +27,4 @@ const Step1 = (props) => {
   );
 };
 
-export default withRouter(Step1);
+export default withRouter(Step2);
