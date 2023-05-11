@@ -17,10 +17,10 @@ const Step3 = (props) => {
             <h2>Step 3</h2>
             <label>
                 Photos:
-                <select {...register("photos-option")}>
-                    <option value="from-ai">Generate using AI</option>
-                    <option value="from-internal-library">Use Forward’s photo library</option>
-                    <option value="from-link">Use my photos from the link provided</option>
+                <select {...register("photosOption")}>
+                    <option value="fromAI">Generate using AI</option>
+                    <option value="fromInternalLibrary">Use Forward’s photo library</option>
+                    <option value="fromLink">Use my photos from the link provided</option>
                 </select>
             </label>
             <input type="submit" />

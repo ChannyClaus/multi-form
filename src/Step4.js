@@ -16,28 +16,32 @@ const Step4 = (props) => {
         <form onSubmit={handleSubmit(onSubit)}>
             <h2>Step 4</h2>
             <label>
-                Owner Phone Number:
-                <input {...register("owner-phone-number")} defaultValue={state.data.ownerPhoneNumber} />
+                Owner Phone:
+                <input {...register("ownerPhone")} defaultValue={state.data.ownerPhone} />
             </label>
             <label>
                 Owner Email:
-                <input {...register("owner-email")} defaultValue={state.data.ownerEmail} />
+                <input {...register("ownerEmail")} defaultValue={state.data.ownerEmail} />
             </label>
             <label>
                 Owner Name:
-                <input {...register("owner-name")} defaultValue={state.data.ownerName} />
+                <input {...register("ownerName")} defaultValue={state.data.ownerName} />
             </label>
             <label>
                 Restaurant Name:
-                <input {...register("restaurant-name")} defaultValue={state.data.restaurantName} />
+                <input {...register("restaurantName")} defaultValue={state.data.restaurantName} />
             </label>
             <label>
-                Restaurant Phone Number:
-                <input {...register("restaurant-phone-number")} defaultValue={state.data.restaurantPhoneNumber} />
+                Restaurant Email:
+                <input {...register("restaurantEmail")} defaultValue={state.data.restaurantEmail} />
+            </label>
+            <label>
+                Restaurant Phone:
+                <input {...register("restaurantPhone")} defaultValue={state.data.restaurantPhone} />
             </label>
             <label>
                 Restaurant Address:
-                <input {...register("restaurant-address")} defaultValue={state.data.restaurantAddress} />
+                <input {...register("restaurantAddress")} defaultValue={state.data.restaurantAddress} />
             </label>
             <label>
                 Cuisine:
