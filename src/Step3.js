@@ -7,13 +7,13 @@ import updateAction from "./updateAction";
 const Step3 = (props) => {
     const { register, handleSubmit } = useForm();
     const { state, actions } = useStateMachine({ updateAction });
-    const onSubit = (data) => {
+    const onSubmit = (data) => {
         actions.updateAction(data);
         props.history.push("./step4");
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
             <h2>Step 3</h2>
             <label>
                 Photos:

@@ -7,13 +7,13 @@ import updateAction from "./updateAction";
 const Step4 = (props) => {
     const { register, handleSubmit } = useForm();
     const { state, actions } = useStateMachine({ updateAction });
-    const onSubit = (data) => {
+    const onSubmit = (data) => {
         actions.updateAction(data);
         props.history.push("./result");
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
             <h2>Step 4</h2>
             <label>
                 Owner Phone:
