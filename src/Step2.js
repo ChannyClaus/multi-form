@@ -16,15 +16,11 @@ const Step1 = (props) => {
     <form onSubmit={handleSubmit(onSubit)}>
       <h2>Step 2</h2>
       <label>
-        Age:
-        <input {...register("age")} defaultValue={state.data.age} />
-      </label>
-      <label>
-        Years of experience:
-        <input
-          {...register("yearsOfExp")}
-          defaultValue={state.data.yearsOfExp}
-        />
+        Template:
+        <select {...register("template")}>
+          <option value="dark">Dark</option>
+          <option value="soft">Soft</option>
+        </select>
       </label>
       <input type="submit" />
     </form>

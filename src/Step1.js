@@ -16,12 +16,8 @@ const Step1 = (props) => {
     <form onSubmit={handleSubmit(onSubmit)}>
       <h2>Step 1</h2>
       <label>
-        First Name:
-        <input {...register("firstName")} defaultValue={state.data.firstName} />
-      </label>
-      <label>
-        Last Name:
-        <input {...register("lastName")} defaultValue={state.data.lastName} />
+        Query (exact text TBD):
+        <input {...register("query")} defaultValue={state.data.firstName} />
       </label>
       <input type="submit" />
     </form>
